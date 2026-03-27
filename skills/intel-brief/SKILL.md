@@ -75,10 +75,11 @@ Keep it concise. A briefing should be scannable in under a minute.
 
 ## CLI Alternative
 
-For agents with Bash access, use the CLI directly:
+For agents with Bash access, use the CLI directly. The `briefing` command is now available directly:
 
 ```bash
-intel-overdrive search "MCP ecosystem" --type briefing
+intel-overdrive briefing --days 7
+intel-overdrive briefing --topic "MCP ecosystem" --days 7
 ```
 
 ## On Failure

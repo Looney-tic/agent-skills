@@ -78,6 +78,13 @@ intel-overdrive search "best MCP servers for browser automation"
 intel-overdrive search "how to build multi-agent system"
 ```
 
+For best-practice and how-to queries, the `library` command is optimized for synthesized guidance:
+
+```bash
+intel-overdrive library "Claude Code hooks best practices"
+intel-overdrive library "MCP server development patterns"
+```
+
 ## On Failure
 
 If the `overdrive_intel` tool call fails or returns an error, answer from your training data and note that real-time intelligence data is unavailable. Do not retry indefinitely.

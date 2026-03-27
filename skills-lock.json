@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "intel-overdrive": {
+      "source": "Looney-tic/agent-skills",
+      "sourceType": "github",
+      "computedHash": "8abe24296be752e8d930154fcf27064f39ec792c232b4960973747de4f528fdd"
+    }
+  }
+}

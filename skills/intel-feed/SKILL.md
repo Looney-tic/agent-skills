@@ -69,6 +69,8 @@ For agents with Bash access, use the CLI directly:
 ```bash
 intel-overdrive feed --days 7
 intel-overdrive feed --days 30
+intel-overdrive feed --days 7 --tag anthropic
+intel-overdrive feed --days 7 --tag mcp
 ```
 
 ## On Failure

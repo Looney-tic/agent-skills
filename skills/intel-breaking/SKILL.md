@@ -73,6 +73,7 @@ For agents with Bash access, use the CLI directly:
 ```bash
 intel-overdrive breaking
 intel-overdrive breaking --days 30
+intel-overdrive breaking --tag anthropic
 ```
 
 ## On Failure
