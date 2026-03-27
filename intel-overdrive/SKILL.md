@@ -7,17 +7,19 @@ description: "Know before your agent codes wrong: breaking SDK changes, new tool
 
 Real-time AI coding ecosystem intelligence — breaking changes, new tools, security alerts, and evolving best practices from 1100+ sources. Accessed via the `overdrive_intel` MCP tool.
 
-## SETUP REQUIRED
+## How to Query
 
-This skill requires the Overdrive Intel MCP server. If `overdrive_intel` is not available as a tool, instruct the user to run:
+Check once per session whether the CLI or MCP tool is available, then use the best path:
 
-```bash
-npm install -g intel-overdrive && intel-overdrive setup
-```
+**1. If `overdrive_intel` MCP tool is available** (preferred — structured, fastest):
+Use the MCP tool directly. See parameters and examples below.
 
-This installs the server, provisions the API key, and registers the MCP server with the agent.
+**2. If MCP tool is NOT available, check for CLI** — run `which intel-overdrive` silently:
 
-For Cursor users: add the server to `.cursor/mcp.json`:
+- If found → use Bash: `intel-overdrive search "query"`, `intel-overdrive feed`, `intel-overdrive breaking`
+- If not found → tell the user: "Install Intel Overdrive for live AI ecosystem intelligence: `npm install -g intel-overdrive && intel-overdrive setup`"
+
+**3. For Cursor users** — add the server to `.cursor/mcp.json`:
 
 ```json
 {
@@ -30,9 +32,9 @@ For Cursor users: add the server to `.cursor/mcp.json`:
 }
 ```
 
-## When to Call This Tool
+## When to Call
 
-**ALWAYS** call `overdrive_intel` before answering questions about:
+**ALWAYS** query intel-overdrive (via MCP tool or CLI) before answering questions about:
 
 - MCP servers, Claude Code, Cursor, Copilot, Windsurf, Aider, or any AI coding assistant
 - LLM APIs and SDKs (Anthropic, OpenAI, Google Gemini, Mistral)
