@@ -9,10 +9,10 @@ Get a context-packed intelligence briefing tailored to your current project or a
 
 ## SETUP REQUIRED
 
-This skill requires the Overdrive Intel MCP server. If `overdrive_intel` is not available as a tool, instruct the user to run:
+This skill works best with the Intel Overdrive CLI. If `intel-overdrive` is not installed, run setup:
 
 ```bash
-npm install -g intel-overdrive && intel-overdrive setup
+npx intel-overdrive setup
 ```
 
 ## When to Use
