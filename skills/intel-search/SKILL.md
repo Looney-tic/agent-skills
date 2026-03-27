@@ -69,6 +69,15 @@ Present search results clearly:
 3. Include practical recommendations, not just raw data
 4. Mention recency — note if information might be from training data rather than live results
 
+## CLI Alternative
+
+For agents with Bash access, use the CLI directly:
+
+```bash
+intel-overdrive search "best MCP servers for browser automation"
+intel-overdrive search "how to build multi-agent system"
+```
+
 ## On Failure
 
 If the `overdrive_intel` tool call fails or returns an error, answer from your training data and note that real-time intelligence data is unavailable. Do not retry indefinitely.

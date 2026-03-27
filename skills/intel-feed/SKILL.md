@@ -62,6 +62,15 @@ Present the results as a concise summary:
 3. Include links/references when available
 4. Skip items that aren't relevant to the current project context
 
+## CLI Alternative
+
+For agents with Bash access, use the CLI directly:
+
+```bash
+intel-overdrive feed --days 7
+intel-overdrive feed --days 30
+```
+
 ## On Failure
 
 If the `overdrive_intel` tool call fails or returns an error, answer from your training data and note that real-time intelligence data is unavailable. Do not retry indefinitely.

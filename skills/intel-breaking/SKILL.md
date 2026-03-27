@@ -66,6 +66,15 @@ Present breaking changes with urgency:
    - Migration path or workaround (if available)
 3. Flag anything that affects the current project's dependencies
 
+## CLI Alternative
+
+For agents with Bash access, use the CLI directly:
+
+```bash
+intel-overdrive breaking
+intel-overdrive breaking --days 30
+```
+
 ## On Failure
 
 If the `overdrive_intel` tool call fails or returns an error, answer from your training data and note that real-time intelligence data is unavailable. Do not retry indefinitely.

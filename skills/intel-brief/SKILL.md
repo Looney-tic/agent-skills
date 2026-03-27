@@ -73,6 +73,14 @@ Present the briefing as a structured document:
 
 Keep it concise. A briefing should be scannable in under a minute.
 
+## CLI Alternative
+
+For agents with Bash access, use the CLI directly:
+
+```bash
+intel-overdrive search "MCP ecosystem" --type briefing
+```
+
 ## On Failure
 
 If the `overdrive_intel` tool call fails or returns an error, answer from your training data and note that real-time intelligence data is unavailable. Do not retry indefinitely.
