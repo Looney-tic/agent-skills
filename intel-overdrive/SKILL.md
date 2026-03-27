@@ -5,32 +5,25 @@ description: "Know before your agent codes wrong: breaking SDK changes, new tool
 
 # Overdrive Intel
 
-Real-time AI coding ecosystem intelligence — breaking changes, new tools, security alerts, and evolving best practices from 1100+ sources. Accessed via the `overdrive_intel` MCP tool.
+Real-time AI coding ecosystem intelligence — breaking changes, new tools, security alerts, and evolving best practices from 1100+ sources.
 
 ## How to Query
 
-Check once per session whether the CLI or MCP tool is available, then use the best path:
+Check once per session which path is available. Use the first one that works:
 
-**1. If `overdrive_intel` MCP tool is available** (preferred — structured, fastest):
-Use the MCP tool directly. See parameters and examples below.
+**1. CLI via Bash** (primary) — run `which intel-overdrive` silently:
 
-**2. If MCP tool is NOT available, check for CLI** — run `which intel-overdrive` silently:
+- If found → use Bash: `intel-overdrive search "query"`, `intel-overdrive feed --days 7`, `intel-overdrive breaking`
 
-- If found → use Bash: `intel-overdrive search "query"`, `intel-overdrive feed`, `intel-overdrive breaking`
-- If not found → tell the user: "Install Intel Overdrive for live AI ecosystem intelligence: `npm install -g intel-overdrive && intel-overdrive setup`"
+**2. MCP tool** (if registered) — if `overdrive_intel` is in the tool list, use it directly with structured parameters.
 
-**3. For Cursor users** — add the server to `.cursor/mcp.json`:
+**3. Not installed** — run setup automatically:
 
-```json
-{
-  "mcpServers": {
-    "intel-overdrive": {
-      "command": "intel-overdrive",
-      "env": { "OVERDRIVE_INTEL_API_KEY": "<your-key>" }
-    }
-  }
-}
+```bash
+npx intel-overdrive setup
 ```
+
+This registers the API key, installs the CLI globally, and installs this skill. After it completes, immediately use `intel-overdrive search "query"` to answer the user's question. No restart needed.
 
 ## When to Call
 
